@@ -1,0 +1,51 @@
+/*
+ * @Author: xyh 
+ * @Date: 2020-09-22 00:30:30 
+ * @Last Modified by: xyh
+ * @Last Modified time: 2020-10-23 00:32:09
+ */
+
+.page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .9);
+  animation: myOpacity 5s;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  div {
+    padding-top: 20px;
+    color: #fff;
+    font-size: 22px;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    animation: logo infinite 20s;
+  }
+}
+@keyframes myOpacity{
+  0%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.2;
+  }
+}
+@keyframes logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
