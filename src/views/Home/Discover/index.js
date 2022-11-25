@@ -42,10 +42,12 @@ class Discover extends Component {
                   !userInfo.profile ? (
                     <div className={style.text}>
                       <span>
-                        登录网抑云音乐，可以享受无限收藏的乐趣，并且可以无限同步到手机
+                      Đăng nhập vào Wangyiyun Music,
+                      bạn có thể tận hưởng niềm vui với các bộ sưu tập không giới hạn và
+                      bạn có thể đồng bộ hóa chúng với điện thoại di động của mình vô thời hạn
                       </span>
                       <div className={style.btn}>
-                        <button onClick={this.toLogin}>用户登录</button>
+                        <button onClick={this.toLogin}>Đăng nhập người dùng</button>
                       </div>
                     </div>
                   ) : (
@@ -58,17 +60,17 @@ class Discover extends Component {
                         <div className={style.u_text}>
                           <a style={{color: '#000',fontSize:'16px',fontWeight:550}} href="#/me">{userInfo.profile.nickname}</a>
                           <a style={{color: '#ccc',fontSize:'16px',fontWeight:500}} href="/">等级:0</a>
-                          <button >签到</button>
+                          <button >Đăng ký</button>
                         </div>
                       </div>
                       <div className={style.count}>
                         <div className={style.count_info}>
                           <span>{userInfo.profile.eventCount}</span>
-                          <span>动态</span>
+                          <span>Năng động</span>
                         </div>
                         <div className={style.count_info} style={{borderLeft:'1px solid #ccc',borderRight: '1px solid #ccc'}}>
                           <span>{userInfo.profile.follows}</span>
-                          <span>关注</span>
+                          <span>Tập Trung</span>
                         </div>
                         <div className={style.count_info}>
                           <span>{userInfo.profile.followeds}</span>
@@ -78,9 +80,6 @@ class Discover extends Component {
                     </div>
                   )
                 }
-
-                
-              
                 </div>
               <Scroll />
             </div>

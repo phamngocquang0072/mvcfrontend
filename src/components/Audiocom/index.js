@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import style from './index.module.scss'
 import {MenuUnfoldOutlined,StepForwardOutlined,StepBackwardOutlined ,FolderAddOutlined,DeleteOutlined,CloseOutlined, PlayCircleOutlined,YoutubeOutlined} from '@ant-design/icons'
@@ -29,7 +30,7 @@ export default class index extends Component {
       audioData: {
         img: 'http://s4.music.126.net/style/web2/img/default/default_album.jpg',
         url: '',
-        name: '暂无音乐',
+        name: 'Chưa có âm nhạc',
       },
       isShowHeight: true,
       index: 0
@@ -108,7 +109,7 @@ export default class index extends Component {
       .then(res=>{
         getSongUrl({id:data.id}).then(result => {
           // console.log(result.data.data[0].url);
-          if(!result.data.data[0].url)  message.info('亲爱的,暂无音源')
+          if(!result.data.data[0].url)  message.info('Thân mến, không có nguồn âm thanh')
           // console.log(this.state.playList.length);
           this.setState({
             audioData: {
@@ -132,7 +133,7 @@ export default class index extends Component {
           },()=>{
             this.getIndex()
           })
-          message.info('亲爱的,暂无版权')
+          message.info('Thân mến, không có bản quyền')
       })
   }
   // 获取当前播放歌曲索引
@@ -175,7 +176,7 @@ export default class index extends Component {
       audioData: {
         img: 'http://s4.music.126.net/style/web2/img/default/default_album.jpg',
         url: '',
-        name: '暂无音乐',
+        name: 'Chưa có âm nhạc',
       },
     })
   }
@@ -247,7 +248,7 @@ export default class index extends Component {
             <div 
               className={style.content_right}
               onClick={this.showList}
-              title="播放列表"
+              title="Danh sách phát"
             >
               <MenuUnfoldOutlined />
               <p>{count}</p>
@@ -266,20 +267,20 @@ export default class index extends Component {
           >
             <div className={style.title}>
               <div className={style.left_t}>
-                播放列表({count})
+                Danh sách phát({count})
               </div>
               <div className={style.right_t}>
-                <div className={style.all} title="收藏">
-                  <FolderAddOutlined />收藏全部
+                <div className={style.all} title="Sưu tấm">
+                  <FolderAddOutlined />Yêu thích tát cả
                 </div>
                 <div 
                   className={style.del} 
-                  title="清除"
+                  title="Xóa"
                   onClick={this.del}
                 >
-                  <DeleteOutlined />清除
+                  <DeleteOutlined />Xóa
                 </div>
-                <div className={style.close} onClick={this.showList} title="关闭">
+                <div className={style.close} onClick={this.showList} title="Khép kín">
                   <CloseOutlined />
                 </div>
               </div>
@@ -290,10 +291,10 @@ export default class index extends Component {
                 <tbody>
                   <tr>
                     <th></th>
-                    <th colSpan ="2">歌曲标题</th>
-                    <th>时长</th>
-                    <th>歌手</th>
-                    <th>专辑</th>
+                    <th colSpan ="2">Tên bài hát</th>
+                    <th>Thời gian</th>
+                    <th>Ca sĩ</th>
+                    <th>Album</th>
                   </tr>
                   {/* <tr>
                     <td></td>
@@ -310,10 +311,10 @@ export default class index extends Component {
                             <span>{index+1}</span>
                             <div>
                               <PlayCircleOutlined 
-                                title="播放" 
+                                title="Phát" 
                                 onClick={()=>{this.playMuisc(index)}}
                               />
-                              <FolderAddOutlined  title="收藏"/>
+                              <FolderAddOutlined  title="Sưu tầm"/>
                             </div>
                           </div>
                         </td>
@@ -322,7 +323,7 @@ export default class index extends Component {
                             {
                               item.mv ? <a href={`#/mv?id=${item.mv}`}><YoutubeOutlined 
                                   style={{color:"#fff",marginRight:'10px',current:'pointer'}} 
-                                  title="播放mv"
+                                  title="Phát MV"
                                 /></a> : ''
                             }
                             {item.name}
@@ -334,8 +335,6 @@ export default class index extends Component {
                       </tr>
                     ))
                   }
-                  
-                  
                 </tbody>
               </table>
             </div>

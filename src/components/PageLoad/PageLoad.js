@@ -15,7 +15,7 @@ class PageLoad extends Component {
     return (
       <div className="page op">
         <img src={require("../../assets/images/logo.svg")} alt="loading图片"/>
-        <div>正在加载中&nbsp;&nbsp;请稍等....</div>
+        <div>Vui lòng đợi trong khi tải....</div>
       </div>
     )
   }

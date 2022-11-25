@@ -10,7 +10,7 @@ export default class index extends Component {
             {data.title}
           </span>
           <span className={style.t_right}>
-            更多 {'>'}
+            Xem tất cả {'>'}
           </span>
         </div>
         

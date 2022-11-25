@@ -86,8 +86,8 @@ export default class index extends Component {
          
         </div>
         <div className={style.programList}>
-          <ProgramList title={'推荐节目'} data={this.state.recommendList} />
-          <ProgramList title={'节目排行榜'} data={this.state.toplist} />
+          <ProgramList title={'Chương trình khuyến nghị'} data={this.state.recommendList} />
+          <ProgramList title={'Bảng xếp hạng'} data={this.state.toplist} />
         </div>
         {
           this.state.typeList.map((item,index) => (

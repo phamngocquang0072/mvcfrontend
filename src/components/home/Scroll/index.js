@@ -42,10 +42,10 @@ export default class Scroll extends Component {
             <span className={style.outside}>
               <span className={style.inside}></span>
             </span>
-            <span className={style.text}>新碟上架</span>
+            <span className={style.text}>Đĩa mới</span>
           </div>
           <div className={style.more}>
-            更多<DoubleRightOutlined style={{fontSize: '14px', color: '#5340a7'}} />
+            Nhiều Hơn<DoubleRightOutlined style={{fontSize: '14px', color: '#5340a7'}} />
           </div>
         </div>
         <div className={style.line}>
@@ -71,8 +71,6 @@ export default class Scroll extends Component {
               ))
             }
           </div>
-          
-          
         </div>
       </div>
     )

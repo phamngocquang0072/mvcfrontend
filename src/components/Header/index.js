@@ -51,36 +51,36 @@ class Header extends Component {
             <Col span={4}>
               <div className={style.logo}>
                 <img src={require('../../assets/images/logo.svg')} alt=""/>
-                <div className={style.text} onClick={this.toHome}>网抑云音乐</div>
+                <div className={style.text} onClick={this.toHome}>Lunar Music</div>
               </div>
             </Col>
             <Col span={1}></Col>
             <Col span={2}>
               <div className={style.find_music}>
-                <div className={style.text}>发现音乐</div>
+                <div className={style.text}>Khám Phá</div>
                 <ul className={style.ul_list} onClick={this.toPath}>
-                  <li data-path="discover">推荐</li>
-                  <li data-path="toplist">排行榜</li>
-                  <li data-path="playlist">歌单</li>
-                  <li data-path="djradio">主播电台</li>
-                  <li data-path="artist">歌手</li>
-                  <li data-path="album">新碟上架</li>
+                  <li data-path="discover">Discover</li>
+                  <li data-path="toplist">Toplist</li>
+                  <li data-path="playlist">Playlist</li>
+                  <li data-path="djradio">DJ Radio</li>
+                  <li data-path="artist">Artis</li>
+                  <li data-path="album">Album</li>
                   {/* <li data-path="mv">mv</li> */}
                 </ul>
               </div>
             </Col>
             <Col span={2}>
-              <div className={style.my_music}>我的音乐</div>
+              <div className={style.my_music}>My Music</div>
             </Col>
             <Col span={2}>
-              <div className={style.friend}>我的朋友</div>
+              <div className={style.friend}>My Friend</div>
             </Col>
             <Col span={3}></Col>
             <Col span={6}>
               <div className={style.input}>
                 <div className={style.center}>
                   <SearchOutlined className={style.icon} />
-                  <input type="text" placeholder="音乐/视频/电台/用户" />
+                  <input type="text" placeholder="Tìm Kiếm" />
                 </div>
               </div>
             </Col>
@@ -89,13 +89,13 @@ class Header extends Component {
                 
                 {
                   userInfo.profile === undefined ? (
-                    <span onClick={this.toLogin}>登 录</span>
+                    <span onClick={this.toLogin}>Login</span>
                     
                   ) : (
                     <>
                       <img src={userInfo.profile.avatarUrl} alt=""/>
                       <ul>
-                        <li onClick={this.loginOut}>退出登录</li>
+                        <li onClick={this.loginOut}>Log Out</li>
                       </ul>
                     </>
                   )

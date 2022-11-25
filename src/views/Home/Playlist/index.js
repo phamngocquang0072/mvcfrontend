@@ -170,19 +170,19 @@ export default class index extends Component {
               className={style.all}
               onClick={this.showInfo}
             >
-              选择分类
+              Chọn danh mục
               <DownOutlined style={{fontSize: '14px',marginRight: 0}}/>
             </button>
           </div>
           <div className={style.right}>
-            <button onClick={this.checkOrder}>{this.state.order==='new' ? '热门' : '新上'}</button>
+            <button onClick={this.checkOrder}>{this.state.order==='new' ? 'Nổi Tiếng' : 'Mới'}</button>
           </div>
           <div 
             className={style.info} 
             style={{opacity: this.state.style.opacity,top:this.state.style.top,left:this.state.style.left}}
           >
             <div className={style.i_title}>
-              <span onClick={()=>{this.toPlay()}}>全部</span>
+              <span onClick={()=>{this.toPlay()}}>Tất cả </span>
             </div>
             {
               catList.map((item,index) => (

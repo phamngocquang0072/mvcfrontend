@@ -35,7 +35,7 @@ export default class Personalized extends Component {
               <span className={style.outside}>
                 <span className={style.inside}></span>
               </span>
-              <span className={style.text}>热门推荐</span>
+              <span className={style.text}>Phổ Biến</span>
             </div>
             <ul>
               {
@@ -45,7 +45,7 @@ export default class Personalized extends Component {
               }
             </ul>
             <div className={style.more} onClick={()=>this.props.history.push('/index/playlist')}>
-              更多<DoubleRightOutlined style={{fontSize: '14px', color: '#5340a7'}} />
+              Nhiều Hơn<DoubleRightOutlined style={{fontSize: '14px', color: '#5340a7'}} />
             </div>
           </div>
           

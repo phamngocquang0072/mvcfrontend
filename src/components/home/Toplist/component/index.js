@@ -39,10 +39,10 @@ export default class Topitem extends Component {
             <div className={style.icons}>
               <PlayCircleOutlined 
                 onClick={()=>{this.playList(topList)}} 
-                title="播放" 
+                title="Play" 
                 style={{fontSize: '24px'}}
               />
-              <FolderAddOutlined title="收藏" style={{fontSize: '26px'}}/>
+              <FolderAddOutlined title="Sưu tầm" style={{fontSize: '26px'}}/>
             </div>
           </div>
         </div>
@@ -55,18 +55,18 @@ export default class Topitem extends Component {
                 <div className={style.name}>{item.name}</div>
                 <div className={style.icons}>
                   <PlayCircleOutlined 
-                    title="播放" 
+                    title="Play" 
                     onClick= {()=> this.playOwn(item)}
                   />
-                  <PlusOutlined title="添加到播放列表" />
-                  <FolderAddOutlined  title="收藏"/>
+                  <PlusOutlined title="Thêm vào danh sách phát" />
+                  <FolderAddOutlined  title="Sưu tầm"/>
                 </div>
               </div>
             ))
           }
           
           <div className={style.bottom_more}>
-            <span onClick={()=>this.toTop(topList.id)}>查看全部<DoubleRightOutlined /></span>
+            <span onClick={()=>this.toTop(topList.id)}>Xem tất cả<DoubleRightOutlined /></span>
           </div>
           
         </div>

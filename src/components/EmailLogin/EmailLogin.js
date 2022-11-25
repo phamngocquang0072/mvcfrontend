@@ -54,31 +54,29 @@ import './EmailLogin.scss'
                 </div>
                 <div className="emailLogin" onClick={this.emailLogin}>
                     <AppleOutlined  className="icon" />
-                    切换到手机登录
+                    Chuyển sang đăng nhập di động
                 </div>
                 <div className="content">
                     <div className="login">
-                        <label className='text'>邮&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
+                        <label className='text'>Email</label>
                         <input type="text" data-input="user" onChange={this.change} className="user" placeholder={this.props.username} />
                         <label className='underline'></label>
 
                     </div>
                     <div className="login">
-                        <label className='text'>密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+                        <label className='text'>Password</label>
                         <input type="password" data-input="pass" onChange={this.change} className="user" placeholder={this.props.password} />
                         <label className='underline'></label>
 
                     </div>
                 </div>
                 <div className="loginBtn" onClick={this.clickHandler}>
-                    登录
+                    Đăng nhập
                 </div>
                 <div className="registerBtn">
-                    没有账号?请注册
+                    Chưa có tài khoản? Vui lòng đăng ký
                 </div>
-
             </div>
-
         )
     }
 }

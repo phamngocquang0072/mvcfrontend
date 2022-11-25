@@ -45,7 +45,7 @@ export default class index extends Component {
       <div className={style.container}>
         <div className={style.title}>
           <span className={style.t_left}>{title}</span>
-          <span className={style.t_right}>更多 {'>'}</span>
+          <span className={style.t_right}>Xem tất cả {'>'}</span>
         </div>
         <div className={style.content}>
           {this.renderEl(data)}

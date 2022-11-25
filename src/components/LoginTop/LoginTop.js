@@ -107,27 +107,27 @@ import bus from '../../utils/bus'
                 </div>
                 <div className="emailLogin" onClick={this.emailLogin}>
                     <MailOutlined className="icon" />
-                    切换到邮箱登录
+                    Chuyển sang đăng nhập email
                 </div>
                 <div className="content">
                     <div className="login">
-                        <label className='text'>用户名</label>
+                        <label className='text'>Tên tài khoản</label>
                         <input type="text" data-input="user" onChange={this.change} className="user" placeholder={this.props.username} />
                         <label className='underline'></label>
 
                     </div>
                     <div className="login">
-                        <label className='text'>密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+                        <label className='text'>Mật Khẩu</label>
                         <input type="password" data-input="pass" onChange={this.change} className="user" placeholder={this.props.password} />
                         <label className='underline'></label>
 
                     </div>
                 </div>
                 <div className="loginBtn" onClick={this.clickHandler}>
-                    登录
+                    Đăng Nhập
                 </div>
                 <div className="registerBtn">
-                    没有账号?请注册
+                    Chưa có tài khoản? Vui lòng đăng ký
                 </div>
                 <div className={"message "+ (this.state.isShow? "show":"")}>
                     {/* {result.status===200?"登陆成功":"登陆失败"} */}

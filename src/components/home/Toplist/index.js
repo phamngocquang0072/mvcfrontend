@@ -45,10 +45,11 @@ export default class Toplist extends Component {
             <span className={style.outside}>
               <span className={style.inside}></span>
             </span>
-            <span className={style.text}>榜单</span>
+            <span className={style.text}>Danh sách</span>
           </div>
           <div className={style.more} onClick={this.toTop}>
-            更多<DoubleRightOutlined style={{fontSize: '14px', color: '#5340a7'}} />
+              Nhiều Hơn
+            <DoubleRightOutlined style={{fontSize: '14px', color: '#5340a7'}} />
           </div>
         </div>
         <div className={style.line}>

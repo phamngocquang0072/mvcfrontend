@@ -24,10 +24,10 @@ class index extends Component {
                 <tbody>
                   <tr>
                     <th></th>
-                    <th colSpan ="2">歌曲标题</th>
-                    <th>时长</th>
-                    <th>歌手</th>
-                    <th>专辑</th>
+                    <th colSpan ="2">Tên bài hát</th>
+                    <th>Khoảng thời gian</th>
+                    <th>Ca Sĩ</th>
+                    <th>Album</th>
                   </tr>
                   {/* <tr>
                     <td></td>
@@ -44,17 +44,17 @@ class index extends Component {
                             <span>{index+1}</span>
                             <div>
                               <PlayCircleOutlined 
-                                title="播放" 
+                                title="Phát" 
                                 onClick={()=>{this.playMuisc(item)}}
                               />
-                              <FolderAddOutlined  title="收藏"/>
+                              <FolderAddOutlined  title="Sưu Tầm"/>
                             </div>
                           </div>
                         </td>
                         <td colSpan ="2" className={style.name}>
                           <p>
                             {
-                              item.mv ? <a href={`#/mv?id=${item.mv}`}><YoutubeOutlined style={{color:"hotpink",marginRight:'10px',current:'pointer'}} title="播放mv"/></a> : ''
+                              item.mv ? <a href={`#/mv?id=${item.mv}`}><YoutubeOutlined style={{color:"hotpink",marginRight:'10px',current:'pointer'}} title="Phát MV"/></a> : ''
                             }
                             {item.name}
                           </p>

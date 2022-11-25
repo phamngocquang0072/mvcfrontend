@@ -12,8 +12,8 @@ export default class Nofound extends Component {
       <div className="no-found">
         <img src={require("../../assets/images/404.jpg")} alt="loading图片"/> 
         <div className="text">
-          <span>我觉得你是迷路了，好好听歌不香吗？</span>
-          <a href="#/">赶紧来点我一下</a>
+          <span>Tôi nghĩ bạn bị lạc, nghe nhạc không hay sao?</span>
+          <a href="#/">Đến với tôi bây giờ</a>
         </div>
       </div>
     )

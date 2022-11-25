@@ -75,8 +75,8 @@ export default class index extends Component {
     return (
       <div className={style.content}>
         <div className={style.left}>
-          <TopList {...this.props} setData={this.getTopListDetail} title="云音乐特色榜" list={this.state.topList.slice(0,4)} />
-          <TopList {...this.props} setData={this.getTopListDetail} title="全球媒体榜" list={this.state.topList.slice(4)}/>
+          <TopList {...this.props} setData={this.getTopListDetail} title="Danh sách nổi bật" list={this.state.topList.slice(0,4)} />
+          <TopList {...this.props} setData={this.getTopListDetail} title="Truyền thông toàn cầu" list={this.state.topList.slice(4)}/>
         </div>
         <div className={style.right}>
           <div className={style.top_title}>
@@ -87,20 +87,20 @@ export default class index extends Component {
               <div className={style.t_right}>
                 <p>{this.state.topMusicList.name}({this.state.topMusicList.updateFrequency})</p>
                 <div>
-                  <button onClick={this.playList}><PlayCircleOutlined/>播放</button>
+                  <button onClick={this.playList}><PlayCircleOutlined/>Phát</button>
                   <button><FolderAddOutlined/>({this.state.topMusicList.subscribedCount})</button>
                 </div>
               </div>
             </div>
             <div className={style.bottom}>
               <div className={style.b_left}>
-                <span>歌曲列表</span>
-                {this.state.topMusicList.trackCount}首歌
+                <span>Danh sách bài hát</span>
+                {this.state.topMusicList.trackCount}Bài hát
               </div>
               <div className={style.b_right}>
-                播放:
+                Phát:
                 <span>{this.state.topMusicList.playCount}</span>
-                次
+                Hạng :2
               </div>
             </div>
           </div>

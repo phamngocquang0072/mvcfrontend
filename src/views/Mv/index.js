@@ -79,7 +79,7 @@ class index extends Component {
         <Header {...this.props} />
         <div className={style.mv}>
           <div className={style.left}>
-            <div className={style.text}>mv详情:</div>
+            <div className={style.text}>Chi tiết MV:</div>
             <div className={style.video}>
               <video autoPlay controls src={this.state.urlData.url}></video>
             </div>
@@ -91,8 +91,8 @@ class index extends Component {
               <div className={style.title}>
                 <div className={style.t_name}>{this.state.info.name}</div>
                 <div className={style.t_info}>
-                  <span>发布：{this.state.info.publishTime}</span>
-                  <span>播放：{this.state.info.playCount}</span>
+                  <span>Phóng thích：{this.state.info.publishTime}</span>
+                  <span>Phát：{this.state.info.playCount}</span>
                 </div>
               </div>
               <div className={style.text_mv}>
@@ -102,7 +102,7 @@ class index extends Component {
 
             <div className={style.hot}>
               <div className={style.title}>
-                热门评论({this.state.total})
+                Nhận Xét Hàng Đầu({this.state.total})
               </div>
               {
                 this.state.hotComments.map(item => (
@@ -120,7 +120,7 @@ class index extends Component {
             </div>
           </div>
           <div className={style.right}>
-            <div className={style.text}>相关推荐:</div>
+            <div className={style.text}>Gợi ý liên quan:</div>
             {
               this.state.simiList.map(item => (
                 <div 

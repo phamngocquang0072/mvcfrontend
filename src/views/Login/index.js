@@ -5,7 +5,7 @@ export default class Login extends React.Component{
     render(){
         return(
             <div>
-                <LoginTop username={"请输入用户名"} password={"请输入密码"} />
+                <LoginTop username={"Vui lòng nhập tên người dùng"} password={"Xin vui lòng nhập mật khẩu"} />
             </div>
         )
     }
