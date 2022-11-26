@@ -34,14 +34,17 @@ function MusicCardContainer() {
             <div class="row">
                 <div class="leftcolumn">
                     <div class="week-card">
-                        <HotInWeek/>
+                        <HotInWeek/> 
+                        {/* Hot in Week */}
                     </div>
                     <div class="new-song-card">
                     <HotInWeek/>
+                    {/* New Song */}
                     </div>
                 </div>
                 <div class="rightcolumn">
-                <HotInWeek/>
+                <HotInWeek/> 
+                {/* Ranking */}
                 </div>
             </div>
         </Container>
