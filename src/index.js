@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-// import './index.scss';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-// 引入antd样式
-import 'antd/dist/antd.css'
-// GLOBAL.XMLHttpRequest = GLOBAL.originalXMLHttpRequest || GLOBAL.XMLHttpRequest
-ReactDOM.render(
-    <App />,
-  document.getElementById('root')
+import React from "react";
+import ReactDom from 'react-dom';
+import App from './app/App';
+import './index.scss';
+import {createStore} from "redux";
+import reducers from "./reducers/reducer";
+import {Provider} from 'react-redux';
+
+const store = createStore(
+    reducers,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDom.render(
+    <Provider store={store}>
+        <App/>
+    </Provider>,
+    document.getElementById('root')
+);
