@@ -43,11 +43,6 @@ function Navigation() {
                         <p>Music Languages</p>
                     </div>
                 </Button>
-                {
-                    isLanguageListOpen
-                    &&
-                    <DropDownLanguageList/>
-                }
             </div>
             <div className="profile" onClick={handleOpenProfile}>
                 <Button className={"Dropdown-btn"}

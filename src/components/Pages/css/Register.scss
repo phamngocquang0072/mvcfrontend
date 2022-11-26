@@ -1,0 +1,136 @@
+#main {
+    font-family: Consolas, sans-serif;
+    background: #794141;
+    background: linear-gradient(110deg, #eb4559 50%, #f78259 50%);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    .nav-item {
+      height: 10vh;
+      display: flex;
+      font-size: 1.3rem;
+      .navbar-brand {
+        font-family: "Pacifico", cursive;
+        color: #f8eeee;
+        font-size: 3rem;
+      }
+    }
+    .main-row {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 90vh;
+      .main-row-img{
+        flex-basis: 50%;
+        flex-grow: 1;
+        .head-phone-img {
+          width: 60%;
+        }
+      }
+      .main-row-text{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+        flex-grow: 1;
+        h1 {
+          font-family: "Bungee", cursive;
+          font-size: 3rem;
+        }
+        p {
+          color: #f8eeee;
+          font-size: 1.2rem;
+        }
+        .btn.btn-submit {
+          margin-top: 50px;
+        }
+        .btn{
+          font-family: Consolas, sans-serif;
+          letter-spacing: 2px;
+          border: none;
+          background-color: #282c34;
+          color: #fff;
+          font-size: 1.1rem;
+          text-transform: uppercase;
+          margin: 10px 0;
+          padding: 15px 20px;
+          border-radius: 5px;
+          width: 40%;
+        }
+        .btn:hover{
+          opacity: 0.9;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  $primary: #044741;
+  $secondary: #056329;
+  $white: #fff;
+  $gray: #a80960;
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: $white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  
+    &::placeholder {
+      color: transparent;
+    }
+  
+    &:placeholder-shown ~ .form__label {
+      font-size: 1.3rem;
+      cursor: text;
+      top: 20px;
+    }
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $gray;
+  }
+  
+  .form__field:focus {
+    ~ .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: $primary;
+      font-weight:700;    
+    }
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, $primary,$secondary);
+    border-image-slice: 1;
+  }
+  /* reset input */
+  .form__field{
+    &:required,&:invalid { box-shadow:none; }
+  }
+  
+
+  
+  

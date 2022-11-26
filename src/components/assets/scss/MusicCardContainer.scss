@@ -11,3 +11,57 @@
     display: none;
   }
 }
+h3{
+  background-color: #333333;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  height: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  height: 100%;
+}
+.new-song-card { 
+  height: 50%; 
+}
+
+.week-card {
+  height: 50%; 
+}
+.hotin {
+  background-color: whitesmoke;
+  height: 100%;
+  .hotin-head {
+    text-transform: uppercase;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .hotin-profile {
+    background-color: #bbe1fa;
+    padding: 5px;
+  }
+
+}
