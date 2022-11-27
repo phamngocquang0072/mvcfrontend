@@ -4,6 +4,10 @@ import MusicCard from "./MusicCard";
 import {useSelector} from "react-redux";
 import Container from "./Container";
 import Slider from "react-slick";
+import Axios from "axios"
+
+
+// Axios.get('')
 
 
 
@@ -16,7 +20,47 @@ function MusicCardContainer() {
                 <div className="hotin-profile">
                     <div className="music-card-container">
                         {
-                            playlists.map(item => (
+                            playlists.slice(0, 4).map(item => (
+                                <div>
+                                    <MusicCard key={item.id} music={item}/>
+                                </div>
+                                
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    const NewSong = () => {
+        
+        return (
+            <div className="hotin">
+                <h3>New Song</h3>
+                <div className="hotin-profile">
+                    <div className="music-card-container">
+                        {
+                            playlists.slice(0, 4).map(item => (
+                                <div>
+                                    <MusicCard key={item.id} music={item}/>
+                                </div>
+                                
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    const Ranking = () => {
+        
+        return (
+            <div className="hotin">
+                <h3>Ranking</h3>
+                <div className="hotin-profile">
+                    <div className="music-card-container">
+                        {
+                            playlists.slice(0, 3).map(item => (
                                 <div>
                                     <MusicCard key={item.id} music={item}/>
                                 </div>
@@ -38,12 +82,12 @@ function MusicCardContainer() {
                         {/* Hot in Week */}
                     </div>
                     <div class="new-song-card">
-                    <HotInWeek/>
+                    <NewSong/>
                     {/* New Song */}
                     </div>
                 </div>
                 <div class="rightcolumn">
-                <HotInWeek/> 
+                <Ranking/> 
                 {/* Ranking */}
                 </div>
             </div>
