@@ -1,17 +1,15 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import '../assets/scss/MusicCardContainer.scss';
 import MusicCard from "./MusicCard";
 import {useSelector} from "react-redux";
 import Container from "./Container";
-import Slider from "react-slick";
-import Axios from "axios"
+import axiosClient, {endpoints} from '../../api/axios'
 
-
-// Axios.get('')
 
 
 
 function MusicCardContainer() {
+
     const HotInWeek = () => {
         
         return (
@@ -60,7 +58,7 @@ function MusicCardContainer() {
                 <div className="hotin-profile">
                     <div className="music-card-container">
                         {
-                            playlists.slice(0, 3).map(item => (
+                            playlists.map(item => (
                                 <div>
                                     <MusicCard key={item.id} music={item}/>
                                 </div>

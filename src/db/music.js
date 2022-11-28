@@ -142,7 +142,23 @@ let musicDB = [
             download: "http://ncs.io/Ignite",
             stream: "http://youtu.be/zbqgv0mMfwk"
         }
-    }
+    },
+    {
+      id: 9,
+      name: "Nhìn Em Vu Quy",
+      author_name: "Huỳnh Văn",
+      img: "c8de28651b51e3275a1c81abbbab453d.jpg",
+      lang: "VIE",
+      timesPlayed: 0,
+      type: "electronic",
+      musicName: "Huỳnh Văn - Nhìn Em Vu Quy.mp3",
+      attribution: {
+          song: "Huỳnh Văn - Nhìn Em Vu Quy",
+          musicBy: "NoCopyrightSounds",
+          download: "https://zingmp3.vn/bai-hat/Nhin-Em-Vu-Quy-Huynh-Van/Z6II9FCI.html",
+          stream: "https://www.youtube.com/watch?v=gebbuGJdXrs"
+      }
+  }
 ];
 
 export default musicDB;
