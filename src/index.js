@@ -6,7 +6,6 @@ import {createStore} from "redux";
 import reducers from "./reducers/reducer";
 import {Provider} from 'react-redux';
 import { useState } from 'react'
-import {AuthProvider} from './context/AuthProvider'
 
 const store = createStore(
     reducers,
@@ -14,9 +13,7 @@ const store = createStore(
 );
 ReactDom.render(
     <Provider store={store}>
-        <AuthProvider>
             <App/>
-        </AuthProvider>
     </Provider>,
     document.getElementById('root')
 );

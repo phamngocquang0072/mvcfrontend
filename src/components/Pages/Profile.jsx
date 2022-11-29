@@ -48,6 +48,7 @@ function Profile() {
                             <SideBarOptions className={"lib-sub"} Icon={PlaylistPlay} href={"/home/playlist/electronic"}
                                             title={"Electronic"}/>
                         </span>
+                        <button className="btn">Change avatar</button>
                     </div>
                 </div>
                 <div className="bottom-profile">

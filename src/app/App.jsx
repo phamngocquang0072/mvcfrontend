@@ -114,4 +114,20 @@ const App = () => {
   );
 };
 
+    return (
+        <ThemeContext.Provider value={themes.light}>
+            <>
+                <Router>
+                    <Switch>
+                        <Route path="/" component={Home}/>
+                        <Route path="/home" exact component={Home}/>
+                        <Route path="/login" component={Login}/>
+                        <Route path="/register" component={Register}/>
+                    </Switch>
+                </Router>
+            </>
+        </ThemeContext.Provider>
+    );
+}
+
 export default App;
