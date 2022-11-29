@@ -62,7 +62,10 @@ const App = () => {
                       />
                     }
                   />
-                  <Route path=":userId" element={<Edit inputs={userInputs} title="Edit User" />} />
+                  <Route
+                    path=":userId"
+                    element={<Edit inputs={userInputs} title="Edit User" />}
+                  />
                   <Route
                     path="new"
                     element={<New inputs={userInputs} title="Add New User" />}
@@ -79,7 +82,12 @@ const App = () => {
                       />
                     }
                   />
-                  <Route path=":categoryId" element={<Edit inputs={productInputs} title="Edit Category" />} />
+                  <Route
+                    path=":categoryId"
+                    element={
+                      <Edit inputs={productInputs} title="Edit Category" />
+                    }
+                  />
                   <Route
                     path="new"
                     element={
@@ -98,13 +106,18 @@ const App = () => {
                       />
                     }
                   />
-                  <Route path=":songId" element={<Edit inputs={productInputs} title="Edit Song"/>} />
+                  <Route
+                    path=":songId"
+                    element={<Edit inputs={productInputs} title="Edit Song" />}
+                  />
                   <Route
                     path="new"
-                    element={<New inputs={productInputs} title="Add New Song" />}
+                    element={
+                      <New inputs={productInputs} title="Add New Song" />
+                    }
                   />
                 </Route>
-                <Route path="profile" element={<ProfileAdmin />}/>
+                <Route path="profile" element={<ProfileAdmin />} />
               </Route>
             </Route>
           </Routes>
@@ -113,21 +126,5 @@ const App = () => {
     </ThemeContext.Provider>
   );
 };
-
-    return (
-        <ThemeContext.Provider value={themes.light}>
-            <>
-                <Router>
-                    <Switch>
-                        <Route path="/" component={Home}/>
-                        <Route path="/home" exact component={Home}/>
-                        <Route path="/login" component={Login}/>
-                        <Route path="/register" component={Register}/>
-                    </Switch>
-                </Router>
-            </>
-        </ThemeContext.Provider>
-    );
-}
 
 export default App;
